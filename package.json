@@ -1,13 +1,20 @@
 {
   "name": "translations-build-tools",
   "version": "0.0.0",
-  "main": "./src/index.js",
-  "repository": "git@github.com:ovh-ux/translations-build-tools.git",
+  "description": "Helpers for the build stack to compile OVH translations",
   "author": "OVH SAS",
   "license": "BSD-3-Clause",
+  "repository": "ovh-ux/translations-build-tools",
+  "keywords": [
+    "translations",
+    "helpers",
+    "ovh"
+  ],
+  "main": "./src/index.js",
   "scripts": {
     "test": "eslint --quiet src/",
     "lint": "eslint --quiet --fix src/",
+    "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
   "lint-staged": {
