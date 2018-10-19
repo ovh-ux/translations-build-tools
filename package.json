@@ -1,6 +1,6 @@
 {
   "name": "@ovh-ux/translations-build-tools",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Helpers for the build stack to compile OVH translations",
   "author": "OVH SAS",
   "license": "BSD-3-Clause",
